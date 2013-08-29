@@ -1,0 +1,317 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1110983E17CF3D1B00DC37EC /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1110983D17CF3D1B00DC37EC /* Cocoa.framework */; };
+		1110984817CF3D1B00DC37EC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1110984617CF3D1B00DC37EC /* InfoPlist.strings */; };
+		1110984A17CF3D1B00DC37EC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110984917CF3D1B00DC37EC /* main.m */; };
+		1110984E17CF3D1B00DC37EC /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = 1110984C17CF3D1B00DC37EC /* Credits.rtf */; };
+		1110985117CF3D1B00DC37EC /* SLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110985017CF3D1B00DC37EC /* SLAppDelegate.m */; };
+		1110985417CF3D1B00DC37EC /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1110985217CF3D1B00DC37EC /* MainMenu.xib */; };
+		1110985C17CF3D5300DC37EC /* SLAppController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1110985B17CF3D5300DC37EC /* SLAppController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1110983A17CF3D1B00DC37EC /* ResizeWindow.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ResizeWindow.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1110983D17CF3D1B00DC37EC /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		1110984017CF3D1B00DC37EC /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		1110984117CF3D1B00DC37EC /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		1110984217CF3D1B00DC37EC /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1110984517CF3D1B00DC37EC /* ResizeWindow-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ResizeWindow-Info.plist"; sourceTree = "<group>"; };
+		1110984717CF3D1B00DC37EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1110984917CF3D1B00DC37EC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1110984B17CF3D1B00DC37EC /* ResizeWindow-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "ResizeWindow-Prefix.pch"; sourceTree = "<group>"; };
+		1110984D17CF3D1B00DC37EC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		1110984F17CF3D1B00DC37EC /* SLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLAppDelegate.h; sourceTree = "<group>"; };
+		1110985017CF3D1B00DC37EC /* SLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLAppDelegate.m; sourceTree = "<group>"; };
+		1110985317CF3D1B00DC37EC /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		1110985A17CF3D5300DC37EC /* SLAppController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLAppController.h; sourceTree = "<group>"; };
+		1110985B17CF3D5300DC37EC /* SLAppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLAppController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1110983717CF3D1B00DC37EC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1110983E17CF3D1B00DC37EC /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1110983117CF3D1B00DC37EC = {
+			isa = PBXGroup;
+			children = (
+				1110984317CF3D1B00DC37EC /* ResizeWindow */,
+				1110983C17CF3D1B00DC37EC /* Frameworks */,
+				1110983B17CF3D1B00DC37EC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1110983B17CF3D1B00DC37EC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1110983A17CF3D1B00DC37EC /* ResizeWindow.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1110983C17CF3D1B00DC37EC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1110983D17CF3D1B00DC37EC /* Cocoa.framework */,
+				1110983F17CF3D1B00DC37EC /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1110983F17CF3D1B00DC37EC /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1110984017CF3D1B00DC37EC /* AppKit.framework */,
+				1110984117CF3D1B00DC37EC /* CoreData.framework */,
+				1110984217CF3D1B00DC37EC /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		1110984317CF3D1B00DC37EC /* ResizeWindow */ = {
+			isa = PBXGroup;
+			children = (
+				1110984F17CF3D1B00DC37EC /* SLAppDelegate.h */,
+				1110985017CF3D1B00DC37EC /* SLAppDelegate.m */,
+				1110985217CF3D1B00DC37EC /* MainMenu.xib */,
+				1110984417CF3D1B00DC37EC /* Supporting Files */,
+				1110985A17CF3D5300DC37EC /* SLAppController.h */,
+				1110985B17CF3D5300DC37EC /* SLAppController.m */,
+			);
+			path = ResizeWindow;
+			sourceTree = "<group>";
+		};
+		1110984417CF3D1B00DC37EC /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1110984517CF3D1B00DC37EC /* ResizeWindow-Info.plist */,
+				1110984617CF3D1B00DC37EC /* InfoPlist.strings */,
+				1110984917CF3D1B00DC37EC /* main.m */,
+				1110984B17CF3D1B00DC37EC /* ResizeWindow-Prefix.pch */,
+				1110984C17CF3D1B00DC37EC /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1110983917CF3D1B00DC37EC /* ResizeWindow */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1110985717CF3D1B00DC37EC /* Build configuration list for PBXNativeTarget "ResizeWindow" */;
+			buildPhases = (
+				1110983617CF3D1B00DC37EC /* Sources */,
+				1110983717CF3D1B00DC37EC /* Frameworks */,
+				1110983817CF3D1B00DC37EC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ResizeWindow;
+			productName = ResizeWindow;
+			productReference = 1110983A17CF3D1B00DC37EC /* ResizeWindow.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1110983217CF3D1B00DC37EC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SL;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = bindiry;
+			};
+			buildConfigurationList = 1110983517CF3D1B00DC37EC /* Build configuration list for PBXProject "ResizeWindow" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 1110983117CF3D1B00DC37EC;
+			productRefGroup = 1110983B17CF3D1B00DC37EC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1110983917CF3D1B00DC37EC /* ResizeWindow */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1110983817CF3D1B00DC37EC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1110984817CF3D1B00DC37EC /* InfoPlist.strings in Resources */,
+				1110984E17CF3D1B00DC37EC /* Credits.rtf in Resources */,
+				1110985417CF3D1B00DC37EC /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1110983617CF3D1B00DC37EC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1110984A17CF3D1B00DC37EC /* main.m in Sources */,
+				1110985117CF3D1B00DC37EC /* SLAppDelegate.m in Sources */,
+				1110985C17CF3D5300DC37EC /* SLAppController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		1110984617CF3D1B00DC37EC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1110984717CF3D1B00DC37EC /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1110984C17CF3D1B00DC37EC /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1110984D17CF3D1B00DC37EC /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		1110985217CF3D1B00DC37EC /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1110985317CF3D1B00DC37EC /* en */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1110985517CF3D1B00DC37EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1110985617CF3D1B00DC37EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1110985817CF3D1B00DC37EC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ResizeWindow/ResizeWindow-Prefix.pch";
+				INFOPLIST_FILE = "ResizeWindow/ResizeWindow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1110985917CF3D1B00DC37EC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "ResizeWindow/ResizeWindow-Prefix.pch";
+				INFOPLIST_FILE = "ResizeWindow/ResizeWindow-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1110983517CF3D1B00DC37EC /* Build configuration list for PBXProject "ResizeWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1110985517CF3D1B00DC37EC /* Debug */,
+				1110985617CF3D1B00DC37EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1110985717CF3D1B00DC37EC /* Build configuration list for PBXNativeTarget "ResizeWindow" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1110985817CF3D1B00DC37EC /* Debug */,
+				1110985917CF3D1B00DC37EC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1110983217CF3D1B00DC37EC /* Project object */;
+}
