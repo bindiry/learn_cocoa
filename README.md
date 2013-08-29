@@ -1,15 +1,15 @@
 Learn Cocoa Programming for OSX
 ===========
 
-## lottery
+### lottery
 
 一个制作彩票的小程序，彩票包含两个1到100之间的数字（包括 1 和 100），实现为未来10个星期制作彩票。
 
-## SpeakLine
+### SpeakLine
 
 一个使用指定系统语音来朗读指字文字的小程序，使用者通过输入文字，选择语音类型，然后点击 “Speak” 按钮来开始朗读。
 
-## ResizeWindow
+### ResizeWindow
 
 一个通过拖动改变窗口大小，并让窗口宽度永远是窗口高度两倍的小程序。
 
