@@ -1,4 +1,4 @@
-Learn Cocoa programming for OSX
+Learn Cocoa Programming for OSX
 ===========
 
 ## lottery
