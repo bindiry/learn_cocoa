@@ -26,9 +26,14 @@
 {
     NSString *todoString = [textField stringValue];
     if (todoString == nil) return;
-    
-    [todoList addObject:todoString];
-    [tableView reloadData];
+    // 检查字符是否存在
+    NSInteger index = [todoList indexOfObject:todoString];
+    if (index == NSNotFound)
+    {
+        [todoList addObject:todoString];
+        [tableView reloadData];
+        [textField setStringValue:@""];
+    }
 }
 
 - (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
@@ -40,6 +45,12 @@
 {
     NSString *todoString = [todoList objectAtIndex:row];
     return todoString;
+}
+
+- (void)tableView:(NSTableView *)atableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
+{
+    [todoList replaceObjectAtIndex:row withObject:object];
+    [tableView reloadData];
 }
 
 @end
