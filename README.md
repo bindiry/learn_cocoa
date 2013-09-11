@@ -17,3 +17,13 @@ Learn Cocoa Programming for OSX
 
 实现简单的添加字符串条目到列表中的 TO-DO List 小程序，添加时会检查重复项，并且可以添加完成后对条目进行重新编辑。
 
+### KVCFun
+
+实现 Key-Value Coding 机制：
+
+- 通过图形对象的 bindings 功能去绑定一个类的实例变量实现它们之间的同步。
+- 通过 Key-Value Observing 机制在改变类的实例变量时自动通知观察者发生的变化。
+- @property 和 @synthesize 的使用。
+- Property 的 Attributes 的使用。
+- Key Paths 及操作符的使用.
+
