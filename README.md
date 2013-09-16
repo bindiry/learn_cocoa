@@ -27,3 +27,11 @@ Learn Cocoa Programming for OSX
 - Property 的 Attributes 的使用。
 - Key Paths 及操作符的使用.
 
+### RaiseMan
+
+实现简单的员工加薪记录管理的 Cocoa Document-based Application 程序，可以通过按钮来添加删除记录，并且可以进行排序，使用 Interface Builder 和 NSArrayController 的绑定机制实现。
+
+### RaiseManChallenge
+
+实现第八章的挑战章节题目，重写 RaiseMan 程序，不使用 NSArrayController 的绑定机制。
+

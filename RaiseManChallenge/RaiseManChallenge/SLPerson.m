@@ -15,7 +15,7 @@
     self = [super init];
     if (self)
     {
-        expectedRaise = 5.0;
+        expectedRaise = 0.5;
         personName = @"New Person";
     }
     return self;
