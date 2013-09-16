@@ -15,6 +15,7 @@
     self = [super init];
     if (self) {
         // Add your subclass-specific initialization here.
+        employees = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -54,6 +55,16 @@
     NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
     @throw exception;
     return YES;
+}
+
+- (void)setEmployees:(NSMutableArray *)a
+{
+    if (a == employees)
+    {
+        return;
+    }
+    
+    employees = a;
 }
 
 @end

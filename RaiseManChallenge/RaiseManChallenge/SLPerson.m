@@ -10,4 +10,20 @@
 
 @implementation SLPerson
 
+- (id)init
+{
+    self = [super init];
+    if (self)
+    {
+        expectedRaise = 5.0;
+        personName = @"New Person";
+    }
+    return self;
+}
+
+@synthesize personName;
+@synthesize expectedRaise;
+
+
+
 @end

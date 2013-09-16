@@ -7,6 +7,7 @@
 //
 
 #import "SLDocument.h"
+#import "SLPerson.h"
 
 @implementation SLDocument
 
@@ -14,7 +15,7 @@
 {
     self = [super init];
     if (self) {
-        // Add your subclass-specific initialization here.
+        employees = [[NSMutableArray alloc] init];
     }
     return self;
 }
@@ -54,6 +55,61 @@
     NSException *exception = [NSException exceptionWithName:@"UnimplementedMethod" reason:[NSString stringWithFormat:@"%@ is unimplemented", NSStringFromSelector(_cmd)] userInfo:nil];
     @throw exception;
     return YES;
+}
+
+- (IBAction)deleteSelectedEmployees:(id)sender
+{
+    // 选中了哪一行
+    NSIndexSet *rows = [tableView selectedRowIndexes];
+    // 有不有选中行？
+    if ([rows count] == 0)
+    {
+        NSBeep();
+        return;
+    }
+    [employees removeObjectsAtIndexes:rows];
+    [tableView reloadData];
+}
+
+- (IBAction)createEmployee:(id)sender
+{
+    SLPerson *newEmployee = [[SLPerson alloc] init];
+    [employees addObject:newEmployee];
+    [tableView reloadData];
+}
+
+- (NSInteger)numberOfRowsInTableView:(NSTableView *)tableView
+{
+    return [employees count];
+}
+
+- (id)tableView:(NSTableView *)aTableView objectValueForTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
+{
+    // 列的 identifier 是什么？
+    NSString *identifier = [tableColumn identifier];
+    
+    // 哪个人？
+    SLPerson *person = [employees objectAtIndex:row];
+    
+    // person 的 identifier 属性值是什么？
+    return [person valueForKey:identifier];
+}
+
+- (void)tableView:(NSTableView *)aTableView setObjectValue:(id)object forTableColumn:(NSTableColumn *)tableColumn row:(NSInteger)row
+{
+    NSString *identifier = [tableColumn identifier];
+    SLPerson *person = [employees objectAtIndex:row];
+    
+    // 设置 identifier 属性的值
+    [person setValue:object forKey:identifier];
+}
+
+- (void)tableView:(NSTableView *)aTableView sortDescriptorsDidChange:(NSArray *)oldDescriptors
+{
+    NSLog(@"identifier");
+    NSArray *newDescriptors = [tableView sortDescriptors];
+    [employees sortUsingDescriptors:newDescriptors];
+    [aTableView reloadData];
 }
 
 @end

@@ -9,5 +9,11 @@
 #import <Foundation/Foundation.h>
 
 @interface SLPerson : NSObject
+{
+    NSString *personName;
+    float expectedRaise;
+}
 
+@property (readwrite, copy) NSString *personName;
+@property (readwrite) float expectedRaise;
 @end

@@ -14,6 +14,7 @@
 		11EDE52B17E1AE7B00323366 /* SLDocument.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EDE52A17E1AE7B00323366 /* SLDocument.m */; };
 		11EDE52E17E1AE7B00323366 /* SLDocument.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EDE52C17E1AE7B00323366 /* SLDocument.xib */; };
 		11EDE53117E1AE7C00323366 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11EDE52F17E1AE7C00323366 /* MainMenu.xib */; };
+		11EDE53917E1B10D00323366 /* SLPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 11EDE53817E1B10D00323366 /* SLPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,8 @@
 		11EDE52A17E1AE7B00323366 /* SLDocument.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLDocument.m; sourceTree = "<group>"; };
 		11EDE52D17E1AE7B00323366 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SLDocument.xib; sourceTree = "<group>"; };
 		11EDE53017E1AE7C00323366 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		11EDE53717E1B10D00323366 /* SLPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLPerson.h; sourceTree = "<group>"; };
+		11EDE53817E1B10D00323366 /* SLPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 			children = (
 				11EDE52917E1AE7B00323366 /* SLDocument.h */,
 				11EDE52A17E1AE7B00323366 /* SLDocument.m */,
+				11EDE53717E1B10D00323366 /* SLPerson.h */,
+				11EDE53817E1B10D00323366 /* SLPerson.m */,
 				11EDE52C17E1AE7B00323366 /* SLDocument.xib */,
 				11EDE52F17E1AE7C00323366 /* MainMenu.xib */,
 				11EDE51E17E1AE7B00323366 /* Supporting Files */,
@@ -173,6 +178,7 @@
 			files = (
 				11EDE52417E1AE7B00323366 /* main.m in Sources */,
 				11EDE52B17E1AE7B00323366 /* SLDocument.m in Sources */,
+				11EDE53917E1B10D00323366 /* SLPerson.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -9,5 +9,11 @@
 #import <Cocoa/Cocoa.h>
 
 @interface SLDocument : NSDocument
+{
+    NSMutableArray *employees;
+}
+
+- (void)setEmployees:(NSMutableArray *)a;
+
 
 @end

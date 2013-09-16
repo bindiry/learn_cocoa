@@ -7,7 +7,15 @@
 //
 
 #import <Cocoa/Cocoa.h>
+@class SLPerson;
 
-@interface SLDocument : NSDocument
+@interface SLDocument : NSDocument<NSTableViewDataSource, NSTableViewDelegate>
+{
+    NSMutableArray *employees;
+    IBOutlet NSTableView *tableView;
+}
+
+- (IBAction)createEmployee:(id)sender;
+- (IBAction)deleteSelectedEmployees:(id)sender;
 
 @end
